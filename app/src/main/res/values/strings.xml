@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Psychic_App_HW_Jimenez_Luis</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="theme_button">Theme Button</string>
+    <string name="choose_your_theme">Choose Your Theme!</string>
+</resources>
