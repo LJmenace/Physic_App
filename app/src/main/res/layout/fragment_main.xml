@@ -1,66 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <TextView
+        android:text="@string/choose_a_theme"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/theme_spinner"
+        app:layout_constraintRight_toLeftOf="@id/theme_spinner"/>
 
-        <Spinner
-            android:id="@+id/theme_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:animateLayoutChanges="true"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/main_fragment_text_view"
-            android:layout_width="426dp"
-            android:layout_height="201dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/theme_spinner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/main_fragment_button"
-            app:layout_constraintVertical_bias="0.404"
-            android:text="@string/choose_your_theme"
-            android:textSize="50sp"
-            android:textAlignment="center"/>
+    <Spinner
+        android:id="@+id/theme_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/mvp_array"
+        app:layout_constraintBottom_toTopOf="@id/main_fragment_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/main_fragment_button"
-            android:layout_width="178dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="88dp"
-            android:focusable="auto"
-            android:hapticFeedbackEnabled="true"
-            android:text="@string/theme_button"
-            android:textAlignment="center"
-            android:textColor="@color/Darkness"
-            android:textColorHighlight="@color/colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/theme_spinner"
-            app:layout_constraintVertical_bias="0.906" />
-    </android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/main_fragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme_spinner" />
 
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>

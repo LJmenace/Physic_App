@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guess_text_margin">40dp</dimen>
+    <dimen name="guess_title_size">24sp</dimen>
+    <dimen name="image_size">150dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="result_text_size">80sp</dimen>
+    <dimen name="ratio_size">64sp</dimen>
+</resources>

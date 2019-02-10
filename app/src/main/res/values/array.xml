@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mvp_array">
+        <item>cats</item>
+        <item>cars</item>
+        <item>dogs</item>
+    </string-array>
+    <array name="cats_array">
+        <item>@drawable/cat_1</item>
+        <item>@drawable/cat_2</item>
+        <item>@drawable/cat_3</item>
+        <item>@drawable/cat_4</item>
+    </array>
+    <array name="cars_array">
+        <item>@drawable/car_1</item>
+        <item>@drawable/car_2</item>
+        <item>@drawable/car_3</item>
+        <item>@drawable/car_4</item>
+    </array>
+    <array name="dogs_array">
+        <item>@drawable/dog_1</item>
+        <item>@drawable/dog_2</item>
+        <item>@drawable/dog_3</item>
+        <item>@drawable/dog_4</item>
+    </array>
+
+</resources>

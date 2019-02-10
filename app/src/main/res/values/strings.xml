@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">Psychic_App_HW_Jimenez_Luis</string>
+    <string name="app_name">Psychic_App_JIMENEZ_LUIS</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="theme_button">Theme Button</string>
-    <string name="choose_your_theme">Choose Your Theme!</string>
+    <string name="submit_button">Submit</string>
+    <string name="percent_resource">You are right %1$s of the time.</string>
+    <string name="choose_a_theme">Choose your theme:</string>
+    <string name="guess_title">Choose a picture!</string>
+    <string name="choose_your_theme">Choose your Theme!</string>
 </resources>
